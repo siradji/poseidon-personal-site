@@ -1,6 +1,7 @@
 /* eslint-disable no-restricted-imports */
 import Head from 'next/head'
 import { PropsWithChildren } from 'react'
+import {Header} from "./Header";
 
 const title = 'Suraj Auwal - Web3 Developer'
 const description = 'A Javascript web 3 developer'
@@ -11,7 +12,7 @@ const description = 'A Javascript web 3 developer'
 export function Default (props: PropsWithChildren<any>): JSX.Element | null {
 
   return (
-    <div className='flex flex-col min-h-screen antialiased'>
+    <div className='flex flex-col min-h-screen antialiased bg-blackish'>
       <Head>
         <meta charSet='UTF-8' />
 
@@ -32,7 +33,7 @@ export function Default (props: PropsWithChildren<any>): JSX.Element | null {
         {/*<link rel='icon' href='/favicon.ico' />*/}
         {/*<link rel='icon' type='image/png' sizes='48x48' href='/favicon.png' />*/}
       </Head>
-        <header />
+        <Header />
         <main className='flex-grow'>
           {props.children}
         </main>
