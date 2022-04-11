@@ -12,7 +12,7 @@ const description = 'A Javascript web 3 developer'
 export function Default (props: PropsWithChildren<any>): JSX.Element | null {
 
   return (
-    <div className='flex flex-col min-h-screen antialiased bg-primary-200'>
+    <div className='flex flex-col min-h-screen antialiased bg-blackish'>
       <Head>
         <meta charSet='UTF-8' />
 

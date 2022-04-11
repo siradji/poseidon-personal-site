@@ -6,7 +6,7 @@ export function Header (): JSX.Element {
   return (
     <header>
       <Container>
-        <nav className='flex items-center py-6'>
+        <nav className='flex items-center py-6 shadow-md'>
           <SiteLogo />
           <div className='flex items-center ml-auto space-x-4'>
             <InternalLink pathname='/' text='Home' testId='Header.Links.Home' />
